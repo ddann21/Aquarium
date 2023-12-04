@@ -31,7 +31,7 @@ function getCurrentSchedule() {
     // Real-time listener for changes in the "times" node
     timesRef.on('value', function(snapshot) {
         var schedule = snapshot.val().time;
-        document.getElementById("currentSchedule").innerHTML = "Current Schedule: " + schedule;
+        document.getElementById("currentSchedule").innerHTML = "" + schedule;
     });
 }
 
@@ -48,7 +48,7 @@ function updateClock() {
 
     var formattedTime = hours + ':' + minutes + ':' + seconds;
 
-    document.getElementById("currentClock").innerHTML = "Current Clock: " + formattedTime;
+    document.getElementById("currentClock").innerHTML = "" + formattedTime;
 
     // Update every second
     setTimeout(updateClock, 1000);
@@ -60,7 +60,7 @@ function getCurrentTemperature() {
     // Real-time listener for changes in the "Temperature" node
     temperatureRef.on('value', function(snapshot) {
         var temperature = snapshot.val().toFixed(2); // Limit to two decimal places
-        document.getElementById("currentTemperature").innerHTML = "Current Temperature: " + temperature + " °C";
+        document.getElementById("currentTemperature").innerHTML = "" + temperature + " °C";
     });
 }
 
