@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, button {
+    padding: 15px 20px;
+
+}
+
+.feed-button {
+    padding: 20px;
+}
+
+button {
+    background-color: #1db122;
+    color: #fff;
+    border-color: #666666;
+    padding: 17px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2acf32;
+}
+
+.input-group, .info-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.schedule {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h4 {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#schedule {
+    border-radius: 25px;
+    border-color: #666666;
+}
+
+#currentClock {
+    font-size: 90px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#currentSchedule {
+    font-size: 16px;
+    margin: 0;
+    color: #777;
+}
+
