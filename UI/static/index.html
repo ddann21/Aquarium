@@ -4,32 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feeder Control</title>
-
     
+    <!-- Include the Firebase SDK (make sure to replace with the correct version) -->
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+    <!-- Link to the external styles.css file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Feeder Control</h1>
+    <div class="container">
+        <div class="info-group">
+            <p id="currentClock"></p>
+        </div>
 
-    <label for="schedule">Set Schedule:</label>
-    <input type="time" id="schedule" required>
-    <button onclick="setSchedule()">Set Schedule</button>
+        <div class="schedule">
+            <input type="time" id="schedule" required>
+            <button onclick="setSchedule()">Set Schedule</button>
+        </div>
 
-    <br>
 
-    <button onclick="turnOnFeed()">Turn On Feed</button>
+        <div class="info-group">
+            <h4>Active Schedule:</h4>
+            <p id="currentSchedule"></p>
+        </div>
 
-    <br>
+        <div class="feed-button">
+            <button onclick="turnOnFeed()">Feed Now</button>
+        </div>
 
-    <h2>Current Temperature:</h2>
-    <p id="currentTemperature"></p>
 
-    <h2>Current Schedule:</h2>
-    <p id="currentSchedule"></p>
-
-    <h2>Current Clock:</h2>
-    <p id="currentClock"></p>
+        <div class="info-group">
+            <h4>Temperature:</h4>
+            <div id="currentTemperature"></div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
