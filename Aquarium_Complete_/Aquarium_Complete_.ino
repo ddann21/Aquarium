@@ -6,10 +6,10 @@
 #include <DallasTemperature.h>
 #include <OneWire.h>
 
-#define FIREBASE_HOST "feesh-93f92-default-rtdb.asia-southeast1.firebasedatabase.app"  
-#define FIREBASE_AUTH "3DY7nzymcfUYGLKqO6tvcyXLs98NizHYBusUmRSz"  
-#define WIFI_SSID "ddann~"
-#define WIFI_PASSWORD "MineIsMine34"
+#define FIREBASE_HOST "<FIREBASE_HOST>"  
+#define FIREBASE_AUTH "<FIREBASE_AUTH>"  
+#define WIFI_SSID "<SSID>"
+#define WIFI_PASSWORD "<PASSWORD>"
 
 #define ONE_WIRE_BUS 4  
 
